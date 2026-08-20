@@ -9,27 +9,23 @@
     <link href="./src/style.css" rel="stylesheet" />
 </head>
 
-<body
-    class="text-slate-100 min-h-screen flex items-center justify-center p-3 sm:p-6 md:p-8 lg:p-12 relative overflow-x-hidden font-sans">
-
-    <!-- Top-Left & Bottom-Right Corner Orbs -->
+<body class="h-full w-full bg-slate-950 text-slate-100 grid place-items-center p-4 relative overflow-hidden font-sans">
+    <!-- Glowing Background Orbs (Kept within viewport) -->
     <div
-        class="absolute -top-24 -left-24 w-48 h-48 sm:w-80 sm:h-80 bg-sky-500/30 rounded-full blur-2xl sm:blur-3xl pointer-events-none orb-top-left">
+        class="absolute -top-20 -left-20 w-64 h-64 sm:w-80 sm:h-80 bg-sky-500/20 rounded-full blur-3xl pointer-events-none orb-top-left">
     </div>
     <div
-        class="absolute -bottom-24 -right-24 w-48 h-48 sm:w-80 sm:h-80 bg-indigo-500/30 rounded-full blur-2xl sm:blur-3xl pointer-events-none orb-bottom-right">
+        class="absolute -bottom-20 -right-20 w-64 h-64 sm:w-80 sm:h-80 bg-indigo-500/20 rounded-full blur-3xl pointer-events-none orb-bottom-right">
     </div>
 
     <!-- Main Card Container -->
     <main
-        class="w-full max-w-xs sm:max-w-xl md:max-w-2xl lg:max-w-4xl xl:max-w-5xl bg-slate-900/80 backdrop-blur-xl border rounded-2xl sm:rounded-3xl p-4 sm:p-8 lg:p-10 shadow-2xl relative z-10 animated-card-border my-auto">
-        <header class="mb-6 sm:mb-8 text-center md:text-left">
+        class="w-full max-w-xs sm:max-w-xl md:max-w-2xl lg:max-w-4xl bg-slate-900/80 backdrop-blur-xl border border-slate-800 rounded-2xl sm:rounded-3xl p-5 sm:p-8 lg:p-10 shadow-2xl relative z-10 animated-card-border">
+        <header class="mb-6 text-center md:text-left">
             <h1 class="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold tracking-tight text-slate-100">Tip
                 Calculator</h1>
             <p class="text-xs sm:text-sm text-slate-400 mt-1">Split bills effortlessly with clean minimalism.</p>
         </header>
-
-        <!-- Content Grid -->
         <div class="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8 lg:gap-12 items-stretch">
             <section class="space-y-4 sm:space-y-6 flex flex-col justify-between">
                 <!-- Bill Input -->
@@ -81,7 +77,7 @@
 
             <!-- Display Section (Right) -->
             <section
-                class="bg-slate-950/70 border border-slate-800 rounded-xl sm:rounded-2xl p-4 sm:p-6 lg:p-8 flex flex-col justify-between space-y-6 mt-2 md:mt-0">
+                class="bg-slate-950/70 border border-slate-800 rounded-xl sm:rounded-2xl p-4 sm:p-6 lg:p-8 flex flex-col justify-between space-y-6">
                 <div class="space-y-4 sm:space-y-6">
                     <div class="flex items-center justify-between gap-2">
                         <div>
@@ -113,7 +109,6 @@
         </div>
     </main>
 
-    <!-- To link external JS file -->
     <script type="module" src="./src/main.js"></script>
 </body>
 
