@@ -1,7 +1,7 @@
 # 💸 Tip Calculator
 
 **Created:** August 17, 2026  
-**Last Updated:** August 18, 2026
+**Last Updated:** August 21, 2026
 
 🔗 **Live Demo:** [Click Here 👆](https://tip-calculator-six-brown.vercel.app/)
 
